@@ -1,0 +1,10 @@
+C:\Projects\NetF_L1\NetF_L1\bin\Debug\NetF_L1.exe.config
+C:\Projects\NetF_L1\NetF_L1\bin\Debug\NetF_L1.exe
+C:\Projects\NetF_L1\NetF_L1\bin\Debug\NetF_L1.pdb
+C:\Projects\NetF_L1\NetF_L1\obj\Debug\CA.csprojAssemblyReference.cache
+C:\Projects\NetF_L1\NetF_L1\obj\Debug\CA.csproj.CoreCompileInputs.cache
+C:\Projects\NetF_L1\NetF_L1\obj\Debug\NetF_L1.exe
+C:\Projects\NetF_L1\NetF_L1\obj\Debug\NetF_L1.pdb
+C:\Projects\NetF_L1\NetF_L1\bin\Debug\CL.dll
+C:\Projects\NetF_L1\NetF_L1\bin\Debug\CL.pdb
+C:\Projects\NetF_L1\NetF_L1\obj\Debug\CA.csproj.CopyComplete
