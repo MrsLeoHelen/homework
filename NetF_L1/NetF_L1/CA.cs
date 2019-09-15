@@ -12,13 +12,13 @@ namespace NetF_L1
         static void Main(string[] args)
         {
             Console.WriteLine("\nTASK ONE");
-            //Task1.DoIt();
+            Task1.DoIt();
             Console.WriteLine("\nTASK TWO");
-            //Task2.DoIt();
+            Task2.DoIt();
             Console.WriteLine("\nTASK TREE");
-            //Task3.DoIt();
+            Task3.DoIt();
             Console.WriteLine("\nTASK FOUR");
-            //Task4.DoIt();
+            Task4.DoIt();
             Console.WriteLine("\nTASK FIVE");
             Task5.DoIt();
         }

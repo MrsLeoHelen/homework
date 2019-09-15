@@ -45,7 +45,23 @@ namespace CL
             Console.WriteLine("\n");
 
             //создание третьего массива и вывод его
-            int[] Array_MN = Array_M.Intersect(Array_N).ToArray();
+            List<int> List_MN = new List<int>();
+            for (int i = 0; i < Array_M.GetLength(0); i++)
+            {
+                if (List_MN.Exists(element => element == Array_M[i]) == false)
+                {
+                    for (int j = 0; j < Array_N.GetLength(0); j++)
+                    {
+                        if (Array_M[i] == Array_N[j])
+                        {
+                            List_MN.Add(Array_M[i]);
+                            break;
+                        }
+                    }
+
+                }
+            }
+            int[] Array_MN = List_MN.ToArray();
             Console.WriteLine("Array_MN");
             foreach (int el in Array_MN)
             {

@@ -4,3 +4,9 @@ C:\Projects\NetF_L1\CL\obj\Debug\CL.csprojAssemblyReference.cache
 C:\Projects\NetF_L1\CL\obj\Debug\CL.csproj.CoreCompileInputs.cache
 C:\Projects\NetF_L1\CL\obj\Debug\CL.dll
 C:\Projects\NetF_L1\CL\obj\Debug\CL.pdb
+C:\Users\mrsle\OneDrive\Документы\GitHub\homework\NetF_L1\CL\bin\Debug\CL.dll
+C:\Users\mrsle\OneDrive\Документы\GitHub\homework\NetF_L1\CL\bin\Debug\CL.pdb
+C:\Users\mrsle\OneDrive\Документы\GitHub\homework\NetF_L1\CL\obj\Debug\CL.csprojAssemblyReference.cache
+C:\Users\mrsle\OneDrive\Документы\GitHub\homework\NetF_L1\CL\obj\Debug\CL.csproj.CoreCompileInputs.cache
+C:\Users\mrsle\OneDrive\Документы\GitHub\homework\NetF_L1\CL\obj\Debug\CL.dll
+C:\Users\mrsle\OneDrive\Документы\GitHub\homework\NetF_L1\CL\obj\Debug\CL.pdb
