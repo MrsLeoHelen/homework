@@ -13,9 +13,19 @@ namespace CL
             //создание массивов
             int Size_M, Size_N;
             Console.Write("Enter size of M: ");
-            Size_M = Int32.Parse(Console.ReadLine());
+            string str = Console.ReadLine();
+            while (!int.TryParse(str, out Size_M))
+            {
+                Console.WriteLine("Try again:");
+                str = Console.ReadLine();
+            }
             Console.Write("Enter size of N: ");
-            Size_N = Int32.Parse(Console.ReadLine());
+            str = Console.ReadLine();
+            while(!int.TryParse(str, out Size_N))
+            {
+                Console.WriteLine("Try again:");
+                str = Console.ReadLine();
+            }
             int[] Array_M = new int[Size_M], Array_N = new int[Size_N];
 
             //заполнение массивов рандомными значениями
@@ -46,11 +56,11 @@ namespace CL
 
             //создание третьего массива и вывод его
             List<int> List_MN = new List<int>();
-            for (int i = 0; i < Array_M.GetLength(0); i++)
+            for (int i = 0; i < Size_M; i++)
             {
                 if (List_MN.Exists(element => element == Array_M[i]) == false)
                 {
-                    for (int j = 0; j < Array_N.GetLength(0); j++)
+                    for (int j = 0; j < Size_N; j++)
                     {
                         if (Array_M[i] == Array_N[j])
                         {
@@ -58,7 +68,6 @@ namespace CL
                             break;
                         }
                     }
-
                 }
             }
             int[] Array_MN = List_MN.ToArray();

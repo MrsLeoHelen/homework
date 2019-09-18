@@ -12,11 +12,12 @@ namespace CL
         {
             //создание и наполнение массива
             int[,] Arr = new int[5, 5];
+            int Size_Arri = 5, Size_Arrj = 5;
             Random Rnd = new Random();
             List<int> List_Arr = new List<int>();
-            for (int i = 0; i < Arr.GetLength(0); i++)
+            for (int i = 0; i < Size_Arri; i++)
             {
-                for (int j = 0; j < Arr.GetLength(1); j++)
+                for (int j = 0; j < Size_Arrj; j++)
                 {
                     Arr[i, j] = Rnd.Next(-100, 100);
                     Console.Write(Arr[i, j] + "\t");
@@ -27,25 +28,26 @@ namespace CL
 
             //нахождение индексов минимального и максимального значений
             int Min_i = 0, Min_j = 0, Max_i = 0, Max_j = 0;
-            for (int i = 0; i < Arr.GetLength(0); i++)
+            int Min = List_Arr.Min(), Max = List_Arr.Max();
+            for (int i = 0; i < Size_Arri; i++)
             {
-                for(int j = 0; j < Arr.GetLength(1); j++)
+                for(int j = 0; j < Size_Arrj; j++)
                 {
-                    if(Arr[i,j] == List_Arr.Min())
+                    if(Arr[i,j] == Min)
                     {
                         Min_i = i;
                         Min_j = j;
                     }
                     else
-                        if (Arr[i,j] == List_Arr.Max())
+                        if (Arr[i,j] == Max)
                     {
                         Max_i = i;
                         Max_j = j;
                     }
                 }
             }
-            Console.WriteLine("Min - {0}", List_Arr.Min());
-            Console.WriteLine("Max - {0}", List_Arr.Max());
+            Console.WriteLine($"Min - {List_Arr.Min()}");
+            Console.WriteLine($"Max - {List_Arr.Max()}");
 
             //замена местами индексов
             int Temp;
@@ -71,12 +73,8 @@ namespace CL
                     List_Arr.Add(Arr[i, j]);
                 }
             }
-            foreach(int el in List_Arr)
-            {
-                Console.Write(el + " ");
-            }
             Console.WriteLine();
-            Console.WriteLine("Sum - {0}", List_Arr.Sum());
+            Console.WriteLine($"Sum - {List_Arr.Sum()}");
         }
         
     }
