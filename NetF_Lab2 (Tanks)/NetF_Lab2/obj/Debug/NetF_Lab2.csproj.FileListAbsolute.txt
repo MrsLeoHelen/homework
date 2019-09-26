@@ -1,0 +1,10 @@
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\bin\Debug\NetF_Lab2.exe.config
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\bin\Debug\NetF_Lab2.exe
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\bin\Debug\NetF_Lab2.pdb
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\bin\Debug\CL.dll
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\bin\Debug\CL.pdb
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\obj\Debug\NetF_Lab2.csprojAssemblyReference.cache
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\obj\Debug\NetF_Lab2.csproj.CoreCompileInputs.cache
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\obj\Debug\NetF_Lab2.csproj.CopyComplete
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\obj\Debug\NetF_Lab2.exe
+C:\Projects\GitHub\homework\NetF_Lab2 (Tanks)\NetF_Lab2\obj\Debug\NetF_Lab2.pdb

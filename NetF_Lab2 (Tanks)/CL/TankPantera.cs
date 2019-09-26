@@ -8,14 +8,13 @@ namespace CL
 {
     public class TankPantera:Tank
     {
-        static int count = 1;
+        public static int countPantera = 1;
         public TankPantera() : base()
         {
-            Random random = new Random();
             Maskirovca = random.Next(1, 10);
             Yroven_Manevrenosti = random.Next(20, 100);
-            Tank_Name = "Pantera-" + count;
-            count++;
+            Tank_Name = "Pantera-" + countPantera;
+            countPantera++;
         }
     }
 }
