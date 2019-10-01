@@ -23,9 +23,48 @@ namespace CL
         }
         public static bool operator *(Tank tank1, Tank tank2)
         {
-
-
+            int countTank1 = 0, countTank2 = 0;
+            //проверка маневренности
+            if (tank1.Yroven_Manevrenosti > tank2.Yroven_Manevrenosti)
+                countTank1++;
+            else if (tank1.Yroven_Manevrenosti < tank2.Yroven_Manevrenosti)
+                countTank2++;
+            //проверка опыта
+            if (tank1.Opit_Ecipasha > tank2.Opit_Ecipasha)
+                countTank1++;
+            else if (tank1.Opit_Ecipasha < tank2.Opit_Ecipasha)
+                countTank2++;
+            //првоерка маскировки
+            if (tank1.Maskirovca > tank2.Maskirovca)
+                countTank1++;
+            else if (tank1.Maskirovca < tank2.Maskirovca)
+                countTank2++;
+            //проверка на победу и изменения танков
+            if (countTank1 == countTank2)
+            {
+                Console.WriteLine("Standoff");
+                return false;
+            }
+            else if (countTank1 > countTank2)
+            {
+                Console.WriteLine($"{tank1.Tank_Name} is WIN");
+                tank1.change(tank2);
+            }
+            else if (countTank1 < countTank2)
+            {
+                Console.WriteLine($"{tank2.Tank_Name} is WIN");
+                tank2.change(tank1);
+            }
             return true;
+        }
+        private Tank change(Tank tank)
+        {
+            tank.Yroven_Broni -= this.Boekomplect;
+            this.Yroven_Broni -= tank.Boekomplect / 2;
+            tank.Opit_Ecipasha++;
+            this.Opit_Ecipasha++;
+            tank.Maskirovca++;
+            return this;
         }
         public override string ToString()
         {

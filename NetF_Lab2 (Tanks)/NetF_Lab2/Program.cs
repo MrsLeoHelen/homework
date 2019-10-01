@@ -22,7 +22,8 @@ namespace NetF_Lab2
 
             //ведение войны
             int countBattle = 1;
-            while(T34.Count > 0 || Pantera.Count > 0)
+            int indexT34, indexPantera;
+            while(true)
             {
                 //вывод состояния армий
                 Console.Clear();
@@ -36,14 +37,53 @@ namespace NetF_Lab2
                 {
                     Console.WriteLine(el);
                 }
+                Console.WriteLine();
 
-                //
+                //проведение битвы
                 Console.WriteLine("BATTLE " + countBattle++);
-
-
+                indexT34 = Tank.random.Next(1, TankT34.countT34) - 1;
+                indexPantera = Tank.random.Next(1, TankPantera.countPantera) - 1;
+                if (T34[indexT34] * Pantera[indexPantera])
+                {
+                    if (checkOnDead(T34[indexT34]))
+                    {
+                        Console.WriteLine($"{T34[indexT34].Tank_Name} DIED");
+                        T34.RemoveAt(indexT34);
+                        TankT34.countT34--;
+                    }
+                    else if (checkOnDead(Pantera[indexPantera]))
+                    {
+                        Console.WriteLine($"{Pantera[indexPantera].Tank_Name} DIED");
+                        Pantera.RemoveAt(indexPantera);
+                        TankPantera.countPantera--;
+                    }
+                }
+                //проверка будет ли ничья в войне
+                else if (T34.Count() == 1 && Pantera.Count == 1)
+                {
+                    Console.WriteLine("STANDOFF OF WAR");
+                    break;
+                }
+                //проверка на завершкние войны
+                if (T34.Count() == 0)
+                {
+                    Console.WriteLine("Pantera ARMY WIN");
+                    break;
+                }
+                if (Pantera.Count() == 0)
+                {
+                    Console.WriteLine("T34 ARMY WIN");
+                    break;
+                }
                 Console.WriteLine("Tap Enter to next Battle");
                 Console.ReadLine();
             }
+        }
+        public static bool checkOnDead(Tank tank)
+        {
+            if (tank.Yroven_Broni < 0)
+                return true;
+            else return false;
         }
     }
 }
